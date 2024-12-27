@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Scholarship_backend": {
+      "main": "src/Scholarship_backend/main.mo",
+      "type": "motoko"
+    },
+    "Scholarship_frontend": {
+      "dependencies": [
+        "Scholarship_backend"
+      ],
+      "source": [
+        "src/Scholarship_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Scholarship_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
