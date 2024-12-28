@@ -1,37 +1,93 @@
+/* App.css */
 body {
-  font-family: sans-serif;
-  font-size: 1.5rem;
-}
-
-img {
-  max-width: 50vw;
-  max-height: 25vw;
-  display: block;
-  margin: auto;
-}
-
-form {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('img.jpg');
+  background-repeat: none;
+  background-size: cover;
+  color: #000000;
   display: flex;
   justify-content: center;
-  gap: 0.5em;
-  flex-flow: row wrap;
-  max-width: 40vw;
-  margin: auto;
-  align-items: baseline;
+  align-items: center;
+  min-height: 100vh;
 }
 
-button[type="submit"] {
-  padding: 5px 20px;
-  margin: 10px auto;
-  float: right;
+.App {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #828181bc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-#greeting {
-  margin: 10px auto;
-  padding: 10px 60px;
-  border: 1px solid #222;
+h1, h2 {
+  color: #000000;
+  text-align: center;
 }
 
-#greeting:empty {
-  display: none;
+.application-form {
+  margin-bottom: 20px;
+}
+
+.application-form input,
+.application-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ad5a5a;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #dadada;
+}
+
+.application-form button {
+  background-color: #505f71;
+  color: rgb(26, 25, 25);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.application-form button:hover {
+  background-color: #357ab8;
+}
+
+.application-list,
+.scholarship-history {
+  list-style: none;
+  padding: 0;
+}
+
+.application-list li,
+.scholarship-history li {
+  background: #f1f0f06c;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #181818;
+  border-radius: 4px;
+}
+
+.application-list p,
+.scholarship-history p {
+  margin: 5px 0;
+}
+
+button {
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #357ab8;
 }
